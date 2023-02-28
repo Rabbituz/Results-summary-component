@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+.cards-container .card-1 {
+    width: 100%;
+    max-width: 760px;
+    height: 356px;
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: white;
+    border-radius: 0 0 32px 32px;
+    margin: 0 auto;
+}
+.cards-container .card-1 .p-1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #CAC9FF;
+    text-align: center;
+}
+.cards-container .card-1 .card-1-number {
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.cards-container .card-1 .card-1-number .first-number {
+    font-size: 5.6rem;
+    font-weight: bold;
+}
+.cards-container .card-1 .card-1-number .second-number {
+    font-size: 1.6rem;
+    color: #CAC9FF;
+    font-weight: bold;
+    font-style: normal;
+    opacity: 0.5;
+}
+.cards-container .card-1 .p-2 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.cards-container .card-1 .p-3 {
+    font-size: 1.5rem;
+    color: #CAC9FF;
+    text-align: center;
+    width: 260px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.cards-container .card-2 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards-container .card-2 .summary {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 30px 220px 30px 0;
+    display: flex;
+}
+.cards-container .card-2 .container-element {
+    width: 315px;
+    height: 56px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards-container .card-2 .container-element p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-right: 110px;
+}
+.cards-container .card-2 .container-element .red {
+    color: #FF5555;
+}
+.cards-container .card-2 .container-element .yellow {
+    color: #FFB21E;
+}
+.cards-container .card-2 .container-element .green {
+    color: #00BB8F;
+}
+.cards-container .card-2 .container-element .blue {
+    color: #1125D6;
+}
+.cards-container .card-2 .container-element .number {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #808694;
+}
+.cards-container .card-2 .container-element .number .black {
+    color: black;
+}
+.cards-container .card-2 button {
+    width: 315px;
+    height: 56px;
+    border-radius: 128px;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+@media screen and (min-width: 768px){  
+    .cards-container {
+        display: flex;
+        width: 760px;
+        background-color: white;
+        border-radius: 32px;
+    }
+    .cards-container .card-2 {
+        background-color: white;
+        border-radius: 32px;
+    }
+    .cards-container .card-1 {
+        height: 512px;
+        border-radius: 32px;
+    }
+    body {
+        background-color: #e2e2e2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .cards-container .card-1 .p-1 {
+        font-size: 2.4rem;
+    }
+    .cards-container .card-1 .p-2 {
+        font-size: 3.2rem;
+    }
+    .cards-container .card-1 .p-3 {
+        font-size: 1.8rem;
+    }
+    .cards-container .card-1 .card-1-number {
+        width: 200px;
+        height: 200px;
+    }
+    .cards-container .card-1 .card-1-number .first-number {
+        font-size: 7.2rem;
+    }
+    .cards-container .card-1 .card-1-number .second-number {
+        font-size: 1.8rem;
+    }
+    .cards-container .card-2 .summary {
+        font-size: 2.4rem;
+    }
+    .cards-container .card-2 .container-element {
+        width: 288px;
+    }
+    .cards-container .card-2 button {
+        background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    }
+}
